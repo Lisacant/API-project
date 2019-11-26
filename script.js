@@ -24,10 +24,10 @@ const ghibli = fetch('https://ghibliapi.herokuapp.com/films')
   card.setAttribute('class', 'card')
 
   // Create an h1 + h2 and set the text content to the film's title
-  const h1 = document.createElement('h1')
-  const h2 = document.createElement ('h2')
-  h1.textContent = datas.title
-  h2.textContent = datas.release_date
+  const h2 = document.createElement('h2')
+  const h3 = document.createElement ('h3')
+  h2.textContent = datas.title
+  h3.textContent = datas.release_date
 
 
 
@@ -40,8 +40,8 @@ const ghibli = fetch('https://ghibliapi.herokuapp.com/films')
   container.appendChild(card);
 
   // Each card will contain an h1, h2 and a p
-  card.appendChild(h1)
   card.appendChild(h2)
+  card.appendChild(h3)
   card.appendChild(p);
     })
 
